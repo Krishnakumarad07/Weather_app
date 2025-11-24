@@ -17,7 +17,7 @@ A modern, interactive weather web application that fetches real-time weather dat
 
 ---
 
-## Demo
+## Screenshot
 
 <img width="609" height="648" alt="image" src="https://github.com/user-attachments/assets/4b2886ca-76fc-4186-b503-a9c5d41aefa8" />
 
