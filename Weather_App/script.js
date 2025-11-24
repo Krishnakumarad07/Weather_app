@@ -1,5 +1,5 @@
 // Insert your real key here:
-const API_KEY = "b72a81d5509f48a1b2391920252211";
+const API_KEY = "YOUR_API_KEY_HERE";
 const BASE_URL = "https://api.weatherapi.com/v1";
 
 // DOM Elements
@@ -422,3 +422,4 @@ searchForm.addEventListener("submit", (e) => {
    =========================================================== */
 
 window.addEventListener("load", initGPS);
+
