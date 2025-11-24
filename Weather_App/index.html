@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - Enhanced Edition</title>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Weather Effects Layers -->
+    <div class="rain-container" id="rainContainer"></div>
+    <div class="snow-container" id="snowContainer"></div>
+    <div id="fogLayerContainer"></div>
+    <div id="iceLayerContainer"></div>
+    <div id="lightningContainer"></div>
+
+    <div class="container">
+      <header>
+        <h1>Weather Forecast</h1>
+        <p>Experience the weather like never before</p>
+      </header>
+
+      <!-- Search Section -->
+      <div class="search-container">
+        <form class="search-form" id="searchForm">
+          <div class="search-input-group">
+            <input
+              type="text"
+              id="locationInput"
+              placeholder="Search for a city..."
+            />
+
+            <button type="submit" id="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+
+          <div class="unit-toggle">
+            <button type="button" class="unit-btn active" data-unit="metric">
+              °C
+            </button>
+            <button type="button" class="unit-btn" data-unit="imperial">
+              °F
+            </button>
+          </div>
+        </form>
+
+        <div id="errorMessage" class="error-message"></div>
+      </div>
+
+      <!-- Weather Content -->
+      <div id="weatherContent">
+        <div class="skeleton">
+          <div class="spinner"></div>
+          <p>Loading weather...</p>
+        </div>
+      </div>
+
+      <!-- Hourly Forecast Section -->
+      <div class="hourly-container" id="hourlyContainer">
+        <h2>Hourly Forecast</h2>
+        <div class="hourly-scroll" id="hourlyScroll">
+          <!-- Filled dynamically -->
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
